@@ -1,0 +1,160 @@
+@font-face {
+	font-family: 'FranklinGothicMedium';
+	src: url('../fonts/framd.eot');
+	src: local('☺'), url('../fonts/framd.woff') format('woff'), 
+    url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+*::-webkit-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  min-height: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 100px;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #000;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #000;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  font-size: 20px;
+  font-family: 'FranklinGothicMedium';
+  text-align: center;
+}
+
+.image {
+  max-width: 200px;
+  margin-left: 50px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 50%;
+}
+
+.ssr {
+  max-width: 200px;
+  margin-left: 50px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 50%;;
+}
+@media (max-width:5000px){
+  .container {
+    max-width: 200%;
+    font-size: 100px;
+  }
+  .image {
+    max-width: 1600px;
+  }
+  .ssr {
+    max-width: 50%;
+  }
+}
+@media (max-width:2000px){
+  .container {
+    max-width: 100%;
+    font-size: 22px;
+  }
+  .image {
+    max-width: 300px;
+  }
+  .ssr {
+    max-width: 50%;
+  }
+}
+
+@media (max-width:1200px){
+  .container {
+    max-width: 120%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width:992px){
+  .container {
+    max-width: 750px;
+    font-size: 20px;
+  }
+  .image {
+    text-align: center;
+  }
+  .h1 {
+    font-size: 5px;
+  }
+}
+
+@media (max-width:767px){
+  .container {
+    max-width: none;
+    font-size: 14px;
+  }
+  .image {
+    width: 200px;
+  }
+}
